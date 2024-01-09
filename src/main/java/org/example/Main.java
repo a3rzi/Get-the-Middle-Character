@@ -1,10 +1,14 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         //given
         //You are going to be given a word.
-        String word = "maryam";
+        System.out.println("please enter the word: ");
+        Scanner input = new Scanner(System.in);
+        String word =input.nextLine();
         //when
         //Your job is to return the middle character of the word
        String middleCharacter =getMiddle(word);
